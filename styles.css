@@ -9,15 +9,19 @@ body {
   background-size: cover;
   background-position: left top;
   font-family: "Zilla Slab", serif;
+  
 }
-
+a{
+  text-decoration: none;
+}
 .box-container {
   width: 70%;
   margin: 0 auto;
 }
 
 #question {
- min-height: 100px;
+  height: 100px;
+  overflow-y: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,6 +37,7 @@ body {
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
 }
+
 
 #display {
   min-height: 100px;
@@ -183,6 +188,16 @@ button {
   position: fixed;
   top: 0;
 }
+
+#blog {
+  position: absolute;
+  color: #9dffad;
+  right: 225px;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 @media only screen and (max-width:992px) {
   #histories{
     grid-template-columns: 1fr 1fr;
@@ -202,5 +217,33 @@ button {
   #histories{
     grid-template-columns: 1fr;
   }
+  #blog {
+    right: 10px;
+  }
+
   
+}
+/* blog Page Styles  */
+
+#articles article {
+  color: white;
+  border: 1px solid #9dffad;
+  border-radius: 5px;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+}
+
+#articles article h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+#articles article b {
+  color: #9dffad;
+}
+
+#articles article p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 5px;
 }
